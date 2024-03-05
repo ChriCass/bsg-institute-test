@@ -49,6 +49,4 @@ Estructura del Proyecto:
 
 Contribuciones:
 Para contribuir al proyecto, por favor envía un pull request o abre un issue para discutir los cambios propuestos.
-
-Licencia:
-Este proyecto se distribuye bajo la licencia [NOMBRE_DE_LA_LICENCIA], vea el archivo LICENSE para más detalles.
+ 
