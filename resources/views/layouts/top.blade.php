@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,34 @@
     <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        .bg__navbar{
+        .bg__navbar {
             background: #ACCB0C !important;
+        }
+
+        .text__admin {
+            color: #ACCB0C !important;
+        }
+
+        .circle {
+            width: 100px;
+            /* Ajusta el tamaño del círculo según lo necesites */
+            height: 100px;
+            /* Asegúrate de que el alto y el ancho sean iguales para crear un círculo perfecto */
+            background-color: #ACCB0C;
+            border-radius: 50%;
+            /* Esto crea el círculo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: calc(2rem + (1 - 0) * ((100vw - 320px) / (1920 - 320)));
+
         }
     </style>
 </head>
+
 <body>
- 
+
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
@@ -33,7 +55,7 @@
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
-                           
+
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
@@ -83,7 +105,8 @@
                         <li>
                             <a class="profile-pic" href="#">
                                 <img src="{{ asset('img/test-1.png') }}" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">{{Auth::user()->first_name }}</span></a>
+                                    class="img-circle"><span
+                                    class="text-white font-medium">{{ Auth::user()->first_name }}</span></a>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
@@ -120,15 +143,15 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('personal.index') }}"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="{{ route('personal.index') }}" aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-menu">Personal</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link"  href="{{ url('/admin/users') }}"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="{{ url('/admin/users') }}" aria-expanded="false">
                                 <i class="fa fa-font" aria-hidden="true"></i>
                                 <span class="hide-menu">Uuarios</span>
                             </a>
@@ -150,35 +173,35 @@
                         <li class="text-center mx-5 mt-5 p-20 upgrade-btn">
                             <form action="{{ route('logout') }}" method="POST">
                                 @csrf
-                                <button type="submit"  class="btn d-grid btn-danger text-white">
-                                    
+                                <button type="submit" class="btn d-grid btn-danger text-white">
+
                                     <span class="hide-menu">Logout</span>
                                 </button>
                             </form>
                         </li>
-                        
-           
+
+
                     </ul>
 
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
-        </aside> 
+        </aside>
         <div class="page-wrapper" style="min-height: 250px;">
- 
+
             <div class="container-fluid">
                 @yield('content')
-                    <!-- Three charts -->
+                <!-- Three charts -->
                 <!-- ============================================================== -->
-             
+
             </div>
 
-            <footer class="footer text-center"> No compartas tu usuario con nadie <a
-                    href="/">© logo</a>
+            <footer class="footer text-center"> No compartas tu usuario con nadie <a href="/">© logo</a>
             </footer>
-            
+
         </div>
- 
+
 </body>
+
 </html>
