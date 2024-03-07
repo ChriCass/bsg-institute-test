@@ -43,27 +43,12 @@
                     <li class="ms-auto"><span class="counter fw-bold text__admin">bienvenido al portal de administracion </span></li>
                 </ul>
             </div>
-        </div>
-
-    </div>
-    <div class="container ">
-        @if (session('status'))
-            <div class="container mt-3">
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    {{ session('status') }}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            </div>
-        @endif
-
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-lg-12 col-sm-12">
             <div class="white-box">
      
             </div>
         </div>
+      
     </div>
+    
+   
 @endsection

@@ -91,22 +91,16 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        <li class=" in">
-                            <form role="search" class="app-search d-none d-md-block me-3">
-                                <input type="text" placeholder="Search..." class="form-control mt-0">
-                                <a href="" class="active">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </form>
+                        <li class=" in ">
+                            <i class="bi bi-question-circle"></i>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
-                        <li>
+                        <li class=" ">
                             <a class="profile-pic" href="#">
-                                <img src="{{ asset('img/test-1.png') }}" alt="user-img" width="36"
-                                    class="img-circle"><span
-                                    class="text-white font-medium">{{ Auth::user()->first_name }}</span></a>
+                                 <span
+                                    class="text-white mx-3 font-medium">{{ Auth::user()->name }}</span></a>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
