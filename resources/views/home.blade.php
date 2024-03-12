@@ -24,7 +24,18 @@
                     <h3 class="box-title">Buenas noches, invitado</h3>
                 @endif
             </div>
-            
+            <div  class="white-box rounded analytics-info d-flex  " >
+                <div><i class="bi h2 bi-file-earmark-text"></i></div>
+                <div class="mx-3"  ><p class="h4 fw-bold m-0">Documentos por firmar</p>
+                    <p class="fw-light">22 depndientes por firmar</p>
+                </div>
+            </div>
+            <div  class="white-box rounded analytics-info d-flex  " >
+                <div> <i class="bi h2 bi-person-arms-up"></i></div>
+                <div class="mx-3"  ><p class="h4 fw-bold m-0">Personal activo</p>
+                    <p class="fw-light">22 en funcioens</p>
+                </div>
+            </div>
         </div>
         <div class="col-lg-8 col-md-12">
             <div class="white-box analytics-info">
@@ -44,7 +55,17 @@
                 </ul>
             </div>
             <div class="white-box">
-     
+                <span class="h5 fw-bold ">
+                    Canales de Ayuda
+                </span>
+                <img class="img-fluid mt-3" src="{{asset('img/help.png')}}" alt="" srcset="">
+            </div>
+            <div class="white-box">
+                <span class="h5 fw-bold ">¿Necesitas algún documento o constancia? Te apoyamos con tus trámites de manera rápida y sencilla</span>
+                <img class="img-fluid mt-3" src="{{asset('img/team.png')}}" alt="" srcset="">
+            </div>
+            <div class="white-box">
+                <span class="h3 fw-bold ">contratos por vencer</span>
             </div>
         </div>
       
