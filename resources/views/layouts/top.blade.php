@@ -8,6 +8,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    @livewireStyles
     <style>
         .bg__navbar {
             background: #ACCB0C !important;
@@ -195,7 +196,7 @@
             </footer>
 
         </div>
-
+        @livewireScripts
 </body>
 
 </html>

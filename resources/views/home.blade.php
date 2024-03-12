@@ -2,7 +2,8 @@
 
 @section('content')
     <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-12">
+        <div class="col-lg-4 col-md-12"  data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
             <div class="white-box rounded analytics-info d-flex justify-content-center flex-column align-items-center">
                 @if(auth()->check())
                     @php
@@ -30,12 +31,7 @@
                     <p class="fw-light">22 depndientes por firmar</p>
                 </div>
             </div>
-            <div  class="white-box rounded analytics-info d-flex  " >
-                <div> <i class="bi h2 bi-person-arms-up"></i></div>
-                <div class="mx-3"  ><p class="h4 fw-bold m-0">Personal activo</p>
-                    <p class="fw-light">22 en funcioens</p>
-                </div>
-            </div>
+        @livewire('personal-counter')
         </div>
         <div class="col-lg-8 col-md-12">
             <div class="white-box analytics-info">
